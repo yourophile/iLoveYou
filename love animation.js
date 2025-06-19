@@ -320,12 +320,12 @@ const crtLoveTl = () => {
       shape: "heart",
       delay: move,
       fill: el.colHeart,
-      x: -64,
+      x: -85,
       scale: { 0: 0.95, easing: easingHeart },
       duration: 500,
     })
       .then({
-        x: { to: -62, easing },
+        x: { to: -90, easing },
         scale: { to: 0.65, easing },
         duration: boom + move - 500,
       })
@@ -376,7 +376,7 @@ const crtLoveTl = () => {
         easing: easingOut,
       }),
 
-    ...crtBoom(move, -64, 46),
+    ...crtBoom(move, -65, 46),
     ...crtBoom(move * 2 + boom, 18, 34),
     ...crtBoom(move * 3 + boom * 2 - delta, -64, 34),
     ...crtBoom(move * 3 + boom * 2, 45, 34),
